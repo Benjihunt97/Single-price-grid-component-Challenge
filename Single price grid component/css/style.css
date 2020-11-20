@@ -1,0 +1,136 @@
+/*  ==============
+    prefix styling
+    ==============  */
+:root {
+  --clr-sub: #2ab2af;
+  --clr-yellow: #c0df34;
+  --clr-grayish-blue: #98a6bd;
+  --clr-light-gray: #e5eff5;
+  --clr-us: #79cccd;
+  --fs-main: .75rem;
+  --ff-main: 'Karla', sans-serif;
+  --wg-small: 400;
+  --wg-big: 700;
+  --window-mobile: 375px;
+  --window-desktop: 1440px;
+}
+
+/*  ==============
+    global styling
+    ==============  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+h1, h2, h3 {
+  margin: .5em 0;
+}
+
+body {
+  margin: 0;
+  font-family: var(--ff-main);
+  font-size: var(--fs-main);
+  background: var(--clr-light-gray);
+  line-height: 1.5;
+}
+
+.container {
+  margin: 2em 1em;
+  background: #fff;
+  border-radius: 50px;
+}
+
+.container div {
+  padding: 3em;
+}
+
+.container .community {
+  background: #fff;
+  border-radius: 10px;
+}
+
+.container .community .community__text {
+  padding: 0;
+  margin: 0;
+  width: 75%;
+}
+
+.container .community .main__header {
+  color: var(--clr-sub);
+}
+
+.container .community .main__sub-heading {
+  color: var(--clr-yellow);
+}
+
+.container .community p {
+  color: var(--clr-grayish-blue);
+}
+
+.container .subscription {
+  color: #fff;
+  background: var(--clr-sub);
+  border-radius: 0 0 0 10px;
+}
+
+.container .subscription .price {
+  position: relative;
+  font-size: 3em;
+}
+
+.container .subscription .price span {
+  font-size: .5em;
+  margin: .5em .5em;
+  opacity: .6;
+}
+
+.container .subscription .last__child {
+  opacity: .6;
+}
+
+.container .subscription .btn {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-weight: var(--wg-big);
+  text-decoration: none;
+  font-size: var(--ff-main);
+  background: var(--clr-yellow);
+  padding: 1em 6em;
+  margin-top: 3em;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.3);
+}
+
+.container .us {
+  color: #fff;
+  background: var(--clr-us);
+  border-radius: 0 0 10px 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8em auto;
+    max-width: 700px;
+  }
+  .container .community {
+    width: 100%;
+  }
+  .container .subscription, .container .us {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
